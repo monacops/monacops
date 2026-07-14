@@ -1,0 +1,18 @@
+flowchart LR
+  Executive[Executive] --> Request[Brief Request or Schedule]
+  Request --> Orchestrator[AI Orchestrator]
+  Orchestrator --> Access[Access and Purpose Checks]
+  Access --> Reporting[Reporting Agent]
+  Access --> Risk[Risk Detection Agent]
+  Access --> Knowledge[Knowledge Agent]
+  Access --> FollowUp[Follow-up Agent]
+
+  Reporting --> BI[(BI and KPIs)]
+  Risk --> Ops[(Operations and Support)]
+  Knowledge --> Docs[(Knowledge Base)]
+  FollowUp --> Tasks[(Task Systems)]
+
+  Orchestrator --> Brief[Executive Brief]
+  Brief --> Approval[Human Approval Queue]
+  Approval --> Executive
+  Orchestrator --> Audit[(Audit Log)]

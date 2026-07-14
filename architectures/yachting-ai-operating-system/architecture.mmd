@@ -1,0 +1,25 @@
+flowchart LR
+  Client[Client or Representative] --> Channels[Email and Approved Messaging]
+  Channels --> Intake[Intake Agent]
+  Intake --> Policy[Policy and Consent Checks]
+  Policy --> Orchestrator[AI Orchestrator]
+
+  Orchestrator --> Memory[Client Memory Agent]
+  Orchestrator --> Matching[Yacht Matching Agent]
+  Orchestrator --> Docs[Document Agent]
+  Orchestrator --> CRM[CRM Agent]
+  Orchestrator --> Reporting[Reporting Agent]
+
+  Memory --> Data[(Client Notes and CRM)]
+  Matching --> Inventory[(Yacht Inventory)]
+  Docs --> Documents[(Document System)]
+  CRM --> CRMSystem[(CRM)]
+  Reporting --> Metrics[(Metrics Store)]
+
+  Orchestrator --> Approval[Human Approval Queue]
+  Approval --> Broker[Yacht Broker]
+  Broker --> Channels
+
+  Orchestrator --> Audit[(Audit Log)]
+  Policy --> Audit
+  Approval --> Audit

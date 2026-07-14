@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Sales AI Reference Architecture</title>
+  <desc id="desc">High-level architecture showing lead intake, orchestration, sales agents, CRM, approved knowledge, human approval and audit logging.</desc>
+  <rect width="1200" height="720" fill="#07111f"/>
+  <text x="60" y="70" fill="#f8efe1" font-family="Arial, sans-serif" font-size="34" font-weight="700">Sales AI</text>
+  <text x="60" y="105" fill="#d7bd7f" font-family="Arial, sans-serif" font-size="18">Lead qualification, follow-up drafting and CRM proposals under human control</text>
+  <g fill="#10223a" stroke="#d7bd7f" stroke-width="2">
+    <rect x="70" y="170" width="170" height="70" rx="14"/>
+    <rect x="300" y="170" width="170" height="70" rx="14"/>
+    <rect x="530" y="170" width="190" height="70" rx="14"/>
+    <rect x="780" y="170" width="210" height="70" rx="14"/>
+    <rect x="110" y="430" width="170" height="70" rx="14"/>
+    <rect x="320" y="430" width="170" height="70" rx="14"/>
+    <rect x="530" y="430" width="170" height="70" rx="14"/>
+    <rect x="740" y="430" width="170" height="70" rx="14"/>
+    <rect x="950" y="430" width="170" height="70" rx="14"/>
+    <rect x="530" y="565" width="210" height="70" rx="14"/>
+  </g>
+  <g fill="#f8efe1" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">
+    <text x="155" y="212">Lead Source</text>
+    <text x="385" y="212">Lead Intake</text>
+    <text x="625" y="212">AI Orchestrator</text>
+    <text x="885" y="212">Human Approval</text>
+    <text x="195" y="472">Qualification</text>
+    <text x="405" y="472">Research</text>
+    <text x="615" y="472">Follow-up Draft</text>
+    <text x="825" y="472">CRM Agent</text>
+    <text x="1035" y="472">Reporting</text>
+    <text x="635" y="607">Audit Log</text>
+  </g>
+  <g stroke="#d7bd7f" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M240 205 H300"/>
+    <path d="M470 205 H530"/>
+    <path d="M720 205 H780"/>
+    <path d="M625 240 V350 H195 V430"/>
+    <path d="M625 240 V350 H405 V430"/>
+    <path d="M625 240 V430"/>
+    <path d="M625 240 V350 H825 V430"/>
+    <path d="M625 240 V350 H1035 V430"/>
+    <path d="M625 240 V565"/>
+  </g>
+  <text x="60" y="660" fill="#aab6c5" font-family="Arial, sans-serif" font-size="14">Reference SVG. Source Mermaid diagram is available in architecture.mmd.</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d7bd7f"/>
+    </marker>
+  </defs>
+</svg>

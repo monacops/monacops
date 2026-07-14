@@ -1,0 +1,19 @@
+flowchart LR
+  Lead[Lead Source] --> Intake[Lead Intake]
+  Intake --> Orchestrator[AI Orchestrator]
+  Orchestrator --> Qualification[Qualification Agent]
+  Orchestrator --> Research[Research Agent]
+  Orchestrator --> Drafting[Follow-up Drafting Agent]
+  Orchestrator --> CRM[CRM Agent]
+  Orchestrator --> Reporting[Reporting Agent]
+
+  Qualification --> CRMData[(CRM)]
+  Research --> Knowledge[(Approved Knowledge)]
+  Drafting --> Collateral[(Sales Collateral)]
+  CRM --> CRMSystem[(CRM)]
+  Reporting --> Metrics[(Pipeline Metrics)]
+
+  Orchestrator --> Approval[Human Approval Queue]
+  Approval --> SalesRep[Sales Representative]
+  SalesRep --> Email[Email or Sales Tool]
+  Orchestrator --> Audit[(Audit Log)]

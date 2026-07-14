@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+title: "MONACOPS Reference Architectures for Agentic AI Operating Systems"
+abstract: "Vendor-neutral reference architectures for secure Agentic AI Operating Systems and autonomous AI workforces."
+authors:
+  - family-names: "Mektoub"
+    given-names: "Adil"
+  - family-names: "Clement"
+    given-names: "Tanguy"
+organization: "MONACOPS"
+repository-code: "https://github.com/monacops/monacops"
+url: "https://monacops.com"
+license: "Apache-2.0"
+version: "0.1.0"
+date-released: "2026-07-14"
+keywords:
+  - "agentic AI"
+  - "AI operating system"
+  - "autonomous AI workforce"
+  - "AI governance"
+  - "AI security"
+  - "Monaco"
